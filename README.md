@@ -27,6 +27,7 @@ En la carpeta common/angular-material, se encuentra un módulo externo para impo
 
 ## 6to paso: haciendo prueba en el template:
 
+<!-- 
 <div class="example-container">
     <mat-form-field appearance="fill">
         <mat-label>Input</mat-label>
@@ -45,6 +46,7 @@ En la carpeta common/angular-material, se encuentra un módulo externo para impo
         <textarea matInput></textarea>
     </mat-form-field>
 </div>
+ -->
 
 # FIN
 
