@@ -1,27 +1,51 @@
-# Prueba
+# Pasos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+## 1er Paso: crear proyecto
 
-## Development server
+ng new prueba
+ng serve -o
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 2do paso: comprobar funcionamiento básico
 
-## Code scaffolding
+Se prueba que todo esté funcionando bien, se borra elcontenido de app.component.html
+se verifica que todo esté correcto en el navegador
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 3er paso: instalar Angular Material
 
-## Build
+ng add @angular/material
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## 4to paso: reiniciar el servidor
 
-## Running unit tests
+ctrol + c
+ng server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 5to paso: creando módulo de Angular Material
 
-## Running end-to-end tests
+ng g m common/angular-material
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+En la carpeta common/angular-material, se encuentra un módulo externo para importarlo en app.module.ts
 
-## Further help
+## 6to paso: haciendo prueba en el template:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+<div class="example-container">
+    <mat-form-field appearance="fill">
+        <mat-label>Input</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Select</mat-label>
+        <mat-select>
+            <mat-option value="option">Option</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Textarea</mat-label>
+        <textarea matInput></textarea>
+    </mat-form-field>
+</div>
+
+# FIN
+
+Espero que les sirva.
